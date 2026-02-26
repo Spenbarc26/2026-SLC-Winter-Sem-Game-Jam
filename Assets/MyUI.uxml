@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button text="Quit" name="Quit" style="height: 36px; width: 76px;"/>
+    <ui:Button text="Pause" name="Pause" style="height: 40px; width: 73px;"/>
+    <ui:Button text="Start" name="Start" style="height: 39px; width: 73px;"/>
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Label" name="Title" style="width: 75px;"/>
+        <ui:TextField label="Text Field" placeholder-text="filler text" name="Eggs" style="height: 32px; width: 69px;"/>
+        <ui:TextField label="Text Field" placeholder-text="filler text" name="Lives" style="width: 70px; height: 29px;"/>
+    </ui:VisualElement>
+</ui:UXML>
