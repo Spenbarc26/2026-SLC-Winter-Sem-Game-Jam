@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5783040697429443911}
   - component: {fileID: 2581356408423750585}
   - component: {fileID: 5312764019887938615}
+  - component: {fileID: 1987996282806066174}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
-  jumpForce: 30
+  jumpForce: 35
   groundCheck: {fileID: 6576244662682499286}
   groundDistance: 0.4
   groundMask:
@@ -193,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: 88e8bbab2205c584990da20d288e8a33, type: 3}
   m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -208,6 +210,18 @@ MonoBehaviour:
   m_DefaultActionMap: OnFoot
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1987996282806066174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965625239514198518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476df125f290229449805dcb4e75553a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
 --- !u!1 &6993468244664295067
 GameObject:
   m_ObjectHideFlags: 0

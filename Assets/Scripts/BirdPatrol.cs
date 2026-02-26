@@ -24,4 +24,12 @@ public class BirdPatrol : MonoBehaviour
     {
         transform.position += transform.right * patrolSpeed * Time.deltaTime;
     }
+
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Destroy"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
