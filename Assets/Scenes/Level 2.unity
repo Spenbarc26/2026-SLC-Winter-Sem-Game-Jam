@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &152765978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1965625239514198518, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
+  m_PrefabInstance: {fileID: 7753847569020456787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &460212879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -669,21 +674,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2186026325708323968, guid: d25b33ae61c775045b470e24b3cb1efc, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2514933876549761035, guid: d25b33ae61c775045b470e24b3cb1efc, type: 3}
       propertyPath: m_Name
       value: Egg
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040801568791533540, guid: d25b33ae61c775045b470e24b3cb1efc, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7040801568791533540, guid: d25b33ae61c775045b470e24b3cb1efc, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -747,6 +740,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c40846e372a0844e8799988e89a1c32, type: 3}
+--- !u!1 &964209153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964209155}
+  - component: {fileID: 964209154}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &964209154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964209153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8c2041f09915f4c8f943b79b0850e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  player: {fileID: 152765978}
+--- !u!4 &964209155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964209153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.26747, y: 7.7361, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1115908862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1529,14 +1567,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 311696619314514321, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 311696619314514321, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1110491857
-      objectReference: {fileID: 0}
     - target: {fileID: 1965625239514198518, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1545,10 +1575,6 @@ PrefabInstance:
       propertyPath: deadMenu
       value: 
       objectReference: {fileID: 1210704764}
-    - target: {fileID: 5783040697429443911, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1569,3 +1595,4 @@ SceneRoots:
   - {fileID: 1115908862}
   - {fileID: 1660192251}
   - {fileID: 723840731}
+  - {fileID: 964209155}

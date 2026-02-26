@@ -7,6 +7,7 @@ TagManager:
   - Destroy
   - Bird
   - Patrol
+  - Egg
   layers:
   - Default
   - TransparentFX

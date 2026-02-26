@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 2581356408423750585}
   - component: {fileID: 5312764019887938615}
   - component: {fileID: 1987996282806066174}
+  - component: {fileID: 7947317367328429414}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,8 +84,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1110491857
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
@@ -222,6 +223,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476df125f290229449805dcb4e75553a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  deadMenu: {fileID: 0}
+--- !u!114 &7947317367328429414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965625239514198518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea2b3282c5f542479889ed2b8ca4ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerEggCollect
+  eggs: 0
 --- !u!1 &6993468244664295067
 GameObject:
   m_ObjectHideFlags: 0
