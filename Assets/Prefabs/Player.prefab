@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -3992965172872703886, guid: beaa4e687ee346144bf4b6cfd117a14a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -223,7 +223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476df125f290229449805dcb4e75553a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  deadMenu: {fileID: 0}
 --- !u!114 &7947317367328429414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerEggCollect
   eggs: 0
+  eggScore1: {fileID: 0}
+  eggScore2: {fileID: 0}
+  eggScore3: {fileID: 0}
 --- !u!1 &6993468244664295067
 GameObject:
   m_ObjectHideFlags: 0

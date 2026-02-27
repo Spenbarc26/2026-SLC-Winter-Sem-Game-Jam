@@ -3,16 +3,33 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance; //makes singleton
+    public int currentLevel {  get; private set; } //allows setting level
+
     public GameObject player;
     string sceneName;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
-        //sceneName = SceneManager.GetActiveScene().name;
+        //ensure only 1 instance of game manager
+        if(instance == null)
+        { 
+            instance = this; 
+            DontDestroyOnLoad(gameObject);
+            ResetGame();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 
-    // Update is called once per frame
+    public void ResetGame()
+    { 
+        currentLevel = 0;
+    }
+
     void Update()
     {
         if (player.GetComponent<PlayerEggCollect>().eggs >= 3)
