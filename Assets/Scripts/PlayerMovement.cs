@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * Time.deltaTime * moveSpeed);
     }
 
-    private void CheckIsGrounded()
+    private void CheckGround()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
     }
@@ -49,7 +49,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        Debug.Log("Jump");
         if (isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
