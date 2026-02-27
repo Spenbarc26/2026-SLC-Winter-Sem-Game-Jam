@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class LogicManager : MonoBehaviour
 {
     public GameObject player;
+    public GameObject jumpTut;
+    public GameObject moveTut;
 
     void Start()
     {
@@ -27,6 +29,22 @@ public class LogicManager : MonoBehaviour
         if (PlayerHealth.lives <= 0)
         {
             SceneManager.LoadScene("Death Scene");
+        }
+    }
+
+    void OnJump()
+    {
+        if (jumpTut.activeSelf == true)
+        {
+            jumpTut.SetActive(false);
+        }
+    }
+
+    void OnMovement()
+    {
+        if (moveTut.activeSelf == true)
+        {
+            moveTut.SetActive(false);
         }
     }
 }

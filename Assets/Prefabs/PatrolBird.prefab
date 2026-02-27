@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0696bb49ec1175449b8006be4cda419e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BirdPatrol
+  player: {fileID: 34434044076279263, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
 --- !u!70 &2325916058448644477
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
