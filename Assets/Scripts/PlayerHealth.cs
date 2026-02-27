@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public AudioSource source;
-    public AudioClip birdHit;
     public GameObject life1;
     public GameObject life2;
     public GameObject life3;
@@ -66,7 +64,6 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("PlayerDamaged");
             lives--;
             UIManager.instance.InstantiateHitUI();
-            source.PlayOneShot(birdHit);
         }
     }
 }

@@ -12,9 +12,6 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.5f;
     public LayerMask groundMask;
 
-    public AudioSource jumpSource;
-    public AudioClip jumpClip;
-
     private Rigidbody2D rb;
     private Vector2 moveInput;
     public bool isGrounded = false;
@@ -54,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
-            jumpSource.PlayOneShot(jumpClip);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
