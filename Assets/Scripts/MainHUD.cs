@@ -32,10 +32,7 @@ public class MainHUD : MonoBehaviour
         pauseBtn = GetComponent<Button>();
         quitBtn = GetComponent<Button>();
 
-        //add audio
-        //startBtn.onClick.AddListener(PlayClick);
-        //pauseBtn.onClick.AddListener(PlayClick);
-        //quitBtn.onClick.AddListener(PlayClick);
+        
     }
 
 
@@ -80,7 +77,7 @@ public class MainHUD : MonoBehaviour
     }
     public void StartGame()
     {
-       // SceneManager.LoadScene("Scenes/Level1");
+        GameManager.instance.ResetGame();
         
 
     }

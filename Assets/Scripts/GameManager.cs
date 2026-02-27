@@ -30,23 +30,10 @@ public class GameManager : MonoBehaviour
         currentLevel = 0;
     }
 
-    void Update()
+    public void SetLevel(int L)
     {
-        if (player.GetComponent<PlayerEggCollect>().eggs >= 3)
-        {
-            if (SceneManager.GetActiveScene().name == "Level 1")
-            {
-                SceneManager.LoadSceneAsync("Level Complete");
-            }
-            else if (SceneManager.GetActiveScene().name == "Level 2")
-            {
-                SceneManager.LoadSceneAsync("Game Complete");
-            }
-        }
-
-        if (PlayerHealth.lives <= 0)
-        {
-            SceneManager.LoadScene("Death Scene");
-        }
+        currentLevel = L;
     }
+
+    
 }
