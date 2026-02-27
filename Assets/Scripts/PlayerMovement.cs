@@ -26,7 +26,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         CheckGround();
-        transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * Time.deltaTime * moveSpeed);
+        if (transform.position.x <= -97.3 && moveInput.x == -1)
+        {
+            transform.Translate(new Vector3(1, 0, moveInput.y) * Time.deltaTime * moveSpeed);
+        }
+        else if (transform.position.x >= 102.25 && moveInput.x == 1)
+        {
+            transform.Translate(new Vector3(-1, 0, moveInput.y) * Time.deltaTime * moveSpeed);
+        }
+            transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * Time.deltaTime * moveSpeed);
     }
 
     void CheckGround()

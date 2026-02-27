@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdSpawn : MonoBehaviour
 {
@@ -11,7 +12,14 @@ public class BirdSpawn : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            spawnDelay = 3f;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            spawnDelay = 1.5f;
+        }
     }
 
     // Update is called once per frame

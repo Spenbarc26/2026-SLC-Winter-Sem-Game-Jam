@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7321103536302582748}
   - component: {fileID: 4828304125462699002}
+  - component: {fileID: 4604946573401234508}
   m_Layer: 0
   m_Name: Bird Destroyer
   m_TagString: Destroy
@@ -78,3 +79,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 20}
   m_EdgeRadius: 0
+--- !u!114 &4604946573401234508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882076600603378819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da759349c23e544ebaea1eee9da73b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnFollow
+  player: {fileID: 0}

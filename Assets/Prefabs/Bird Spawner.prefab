@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5891194075604657887}
   - component: {fileID: 3179359854282362356}
+  - component: {fileID: 7379447870452771974}
   m_Layer: 0
   m_Name: Bird Spawner
   m_TagString: Untagged
@@ -47,3 +48,16 @@ MonoBehaviour:
   spawnDelay: 2
   bird: {fileID: 100000, guid: aa6b70d0c36804f5db78c64336a457d2, type: 3}
   heightOffset: 9
+--- !u!114 &7379447870452771974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959545702630939971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da759349c23e544ebaea1eee9da73b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnFollow
+  player: {fileID: 0}

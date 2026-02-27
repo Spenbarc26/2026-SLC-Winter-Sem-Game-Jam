@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdPatrol : MonoBehaviour
 {
@@ -7,7 +8,14 @@ public class BirdPatrol : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        patrolSpeed = Random.Range(5, 15);
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            patrolSpeed = Random.Range(5, 15);
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            patrolSpeed = Random.Range(10, 20);
+        }
 
         if (transform.position.x < 0)
         {
