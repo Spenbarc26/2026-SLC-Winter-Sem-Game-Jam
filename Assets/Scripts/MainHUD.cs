@@ -11,8 +11,8 @@ public class MainHUD : MonoBehaviour
     bool gamePaused = false;
 
     //for button sound
-    [SerializeField] private AudioSource btnClickSound;
-    [SerializeField] private AudioClip clickSound;
+    public AudioSource btnClickSound;
+    public AudioClip clickSound;
 
     //[SerializeField] private TextMeshProUGUI livesTxt;
     //[SerializeField] private TextMeshProUGUI titleTxt;
@@ -26,21 +26,21 @@ public class MainHUD : MonoBehaviour
     //[SerializeField] private Button pauseBtn;
     //[SerializeField] private Button quitBtn;
 
-    //private void Awake()
-    //{
-    //    startBtn = GetComponent<Button>();
-    //    pauseBtn = GetComponent<Button>();
-    //    quitBtn = GetComponent<Button>();
+    private void Awake()
+    {
+        //startBtn = GetComponent<Button>();
+        //pauseBtn = GetComponent<Button>();
+        //quitBtn = GetComponent<Button>();
 
-    //    //add audio
-    //    //startBtn.onClick.AddListener(PlayClick);
-    //    //pauseBtn.onClick.AddListener(PlayClick);
-    //    //quitBtn.onClick.AddListener(PlayClick);
-    //}
+        //add audio
+        //startBtn.onClick.AddListener(PlayClick);
+        //pauseBtn.onClick.AddListener(PlayClick);
+        //quitBtn.onClick.AddListener(PlayClick);
+    }
 
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
         
     }
