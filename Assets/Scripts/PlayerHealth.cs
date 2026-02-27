@@ -63,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("PlayerDamaged");
             lives--;
+            UIManager.instance.InstantiateHitUI();
         }
     }
 }
