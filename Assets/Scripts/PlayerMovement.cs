@@ -9,14 +9,14 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5f;
 
     public Transform groundCheck;
-    public float groundDistance = 0.0f;
+    public float groundDistance = 0.5f;
     public LayerMask groundMask;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
     public bool isGrounded = false;
+    public float inputMove = 0.0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -37,14 +37,8 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * Time.deltaTime * moveSpeed);
     }
 
-    void CheckGround()
+    private void CheckIsGrounded()
     {
-        if (groundCheck == null)
-        {
-            isGrounded = false;
-            return;
-        }
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
     }
 
