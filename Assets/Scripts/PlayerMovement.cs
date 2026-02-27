@@ -9,14 +9,14 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5f;
 
     public Transform groundCheck;
-    public float groundDistance = 0.0f;
+    public float groundDistance = 0.5f;
     public LayerMask groundMask;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
     public bool isGrounded = false;
+    public float inputMove = 0.0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,18 +25,32 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckGround();
-        transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * Time.deltaTime * moveSpeed);
+        //side to side movement
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            inputMove = -1.0f;
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            inputMove = 1.0f;
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            inputMove = 0.0f;
+        }
+        rb.linearVelocity = new Vector2(inputMove * moveSpeed, rb.linearVelocity.y);
+
+        CheckIsGrounded();
+
+        //jump
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
     }
 
-    void CheckGround()
+    private void CheckIsGrounded()
     {
-        if (groundCheck == null)
-        {
-            isGrounded = false;
-            return;
-        }
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
     }
 

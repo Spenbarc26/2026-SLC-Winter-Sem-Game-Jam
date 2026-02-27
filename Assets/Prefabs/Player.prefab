@@ -124,7 +124,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!58 &5783040697429443911
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -173,14 +173,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c95b6310560784aa0a13f32b61b0e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
+  moveSpeed: 4
   jumpForce: 35
   groundCheck: {fileID: 6576244662682499286}
-  groundDistance: 0.4
+  groundDistance: 0
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   isGrounded: 0
+  inputMove: 0
 --- !u!114 &5312764019887938615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 6993468244664295067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
