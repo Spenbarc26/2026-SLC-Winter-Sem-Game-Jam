@@ -899,6 +899,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1987996282806066174, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f702ff262de210e47b859501c2692bcf, type: 3}
+    - target: {fileID: 1987996282806066174, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
       propertyPath: life1
       value: 
       objectReference: {fileID: 56697535}
@@ -910,6 +914,14 @@ PrefabInstance:
       propertyPath: life3
       value: 
       objectReference: {fileID: 56697533}
+    - target: {fileID: 2581356408423750585, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ca2a7a3bd3cdd884ca8729fa689b4a58, type: 3}
+    - target: {fileID: 2581356408423750585, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
+      propertyPath: jumpSource
+      value: 
+      objectReference: {fileID: 1113898192}
     - target: {fileID: 7947317367328429414, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
       propertyPath: eggScore1
       value: 
@@ -927,6 +939,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
+--- !u!82 &1113898192 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6961512198084001333, guid: d31947ddbd5dcf347ad0d76f871d9a28, type: 3}
+  m_PrefabInstance: {fileID: 1113898191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1115908862
 PrefabInstance:
   m_ObjectHideFlags: 0
