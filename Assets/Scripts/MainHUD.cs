@@ -14,29 +14,29 @@ public class MainHUD : MonoBehaviour
     [SerializeField] private AudioSource btnClickSound;
     [SerializeField] private AudioClip clickSound;
 
-    [SerializeField] private TextMeshProUGUI livesTxt;
-    [SerializeField] private TextMeshProUGUI titleTxt;
-    [SerializeField] private TextMeshProUGUI eggsTxt;
+    //[SerializeField] private TextMeshProUGUI livesTxt;
+    //[SerializeField] private TextMeshProUGUI titleTxt;
+    //[SerializeField] private TextMeshProUGUI eggsTxt;
 
-    private int m_Lives;
-    private int m_Points;
-    private int m_Eggs;
+    //private int m_Lives;
+    //private int m_Points;
+    //private int m_Eggs;
 
-    [SerializeField] private Button startBtn;
-    [SerializeField] private Button pauseBtn;
-    [SerializeField] private Button quitBtn;
+    //[SerializeField] private Button startBtn;
+    //[SerializeField] private Button pauseBtn;
+    //[SerializeField] private Button quitBtn;
 
-    private void Awake()
-    {
-        startBtn = GetComponent<Button>();
-        pauseBtn = GetComponent<Button>();
-        quitBtn = GetComponent<Button>();
+    //private void Awake()
+    //{
+    //    startBtn = GetComponent<Button>();
+    //    pauseBtn = GetComponent<Button>();
+    //    quitBtn = GetComponent<Button>();
 
-        //add audio
-        //startBtn.onClick.AddListener(PlayClick);
-        //pauseBtn.onClick.AddListener(PlayClick);
-        //quitBtn.onClick.AddListener(PlayClick);
-    }
+    //    //add audio
+    //    //startBtn.onClick.AddListener(PlayClick);
+    //    //pauseBtn.onClick.AddListener(PlayClick);
+    //    //quitBtn.onClick.AddListener(PlayClick);
+    //}
 
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,22 +51,22 @@ public class MainHUD : MonoBehaviour
         
     }
 
-    public void SetLivesTxt()
-    {
-        livesTxt.text = $"Number Of Lives: {m_Lives}";
+    //public void SetLivesTxt()
+    //{
+    //    livesTxt.text = $"Number Of Lives: {m_Lives}";
 
-    }
+    //}
 
-    public void SetTitleTxt()
-    {
-        titleTxt.text = $"Points: {m_Points}";
-    }
+    //public void SetTitleTxt()
+    //{
+    //    titleTxt.text = $"Points: {m_Points}";
+    //}
 
-    public void SetEggsTxt()
-    {
-        eggsTxt.text = $"Number Of Eggs: {m_Eggs}";
+    //public void SetEggsTxt()
+    //{
+    //    eggsTxt.text = $"Number Of Eggs: {m_Eggs}";
 
-    }
+    //}
 
 
     public void PlayClick()

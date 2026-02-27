@@ -14,6 +14,11 @@ public class MenuManager : MonoBehaviour
     {
         
     }
+    
+    public void StartGame()
+    {
+        SceneManager.LoadSceneAsync("Level 1");
+    }
 
     public void NextLevel()
     {
@@ -27,6 +32,6 @@ public class MenuManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Main Menu");
     }
 }
